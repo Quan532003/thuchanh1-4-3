@@ -14,7 +14,8 @@ function isValidInfo() {
     var studentId = document.getElementById("student-id").value;
     var classId = document.getElementById("class-id").value;
 
-    return name!=="" && dob!=="" && studentId!=="" && classId!=="";
+    if(name =="" || dob ==="" || studentId==="" ||classId==="") return false;
+    return true;
 }
 
 function loadData() {

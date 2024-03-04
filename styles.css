@@ -100,12 +100,12 @@ body {
 }
 .succes{
     text-align: center !important;
-    background-color: rgb(206, 221, 195);
+    background-color: rgb(251, 252, 250);
     border-radius: 10px;
     font-weight: bold;
     padding: 10px;
-    box-shadow: 3px 3px 3px rgb(217, 218, 214);
-    border: 2px rgb(108, 177, 108);
+    box-shadow: 3px 3px 3px rgb(255, 255, 255);
+    border: 2px rgb(248, 248, 248);
 }
 .mb-3{
     text-align: center;
@@ -113,18 +113,18 @@ body {
 }
 .result{
 
-    background-color: rgba(196, 201, 218, 0.979);
+    background-color: rgba(239, 240, 243, 0.979);
     padding: 10px;
     padding-bottom: 30px;
-    border: 1px solid rgba(248, 248, 255, 0.733);
+    border: 1px solid rgba(255, 255, 255, 0.733);
     border-radius: 10px;
     font-size: 20px;
     font-weight: bold;
-    box-shadow: 3px 3px 3px rgba(171, 171, 177, 0.596);
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.596);
 }
 #result-container{
     background-color: rgba(243, 243, 243, 0.925) !important;
     border-radius: 10px;
     
-    box-shadow: 10px 10px 10px rgba(51, 51, 51, 0.596);
+    box-shadow: 6px 6px 6px rgba(116, 116, 116, 0.596);
 }
