@@ -14,7 +14,7 @@ function isValidInfo() {
     var studentId = document.getElementById("student-id").value;
     var classId = document.getElementById("class-id").value;
 
-    return name && dob && studentId && classId
+    return name!=="" && dob!=="" && studentId!=="" && classId!=="";
 }
 
 function loadData() {
@@ -234,10 +234,10 @@ function getScore() {
 }
 
 function submitQuizz() {
-    if (!isFinish()) {
-        alert("Vui lòng hoàn thành trên 50% số câu hỏi");
-        return;
-    }
+    // if (!isFinish()) {
+    //     alert("Vui lòng hoàn thành trên 50% số câu hỏi");
+    //     return;
+    // }
 
     const score = getScore();
     const studentInfo = {
@@ -259,9 +259,14 @@ function submitQuizz() {
         <div class="result">
             <p class="my-2">Họ và tên: ${result.studentInfo.name}</p>
             <p class="my-2">Ngày sinh: ${result.studentInfo.dob}</p>
-            <p class="my-2">Mã sinh viên: ${result.studentInfo.studentId}</p>
-            <p class="my-2">Mã lớp: ${result.studentInfo.classId}</p>
+            <p class="my-2">CCCD: ${result.studentInfo.studentId}</p>
+            <p class="my-2">Địa chỉ thường trú: ${result.studentInfo.classId}</p>
             <p class="my-2">Điểm: ${result.score} / 40</p>
-        </div>`;
+            
+        </div>
+        <button class='btn btn-primary w-100 py-2 mt-3 mb-5' onclick='home()'>Trang chủ</button>`
     resultContainer.innerHTML += html;
+}
+function home(){
+    window.location.href = "index.html";
 }
